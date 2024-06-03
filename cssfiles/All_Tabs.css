@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: #00041f;
+  color: white;
+  opacity: 0;
+  transition: background-color 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+.p1 {
+  font-size: 80px;
+}
+
+.p2 {
+  font-size: 70px;
+}
+
+.p3 {
+  font-size: 60px;
+}
+
+.p4 {
+  font-size: 50px;
+}
+
+.p5 {
+  font-size: 40px;
+}
+
+.p6 {
+  font-size: 30px;
+}
+
+.p7 {
+  font-size: 20px;
+}
+
+.p8 {
+  font-size: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+#task-num {
+  color: rgb(0, 132, 255);
+}
+
+#Profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.cut {
+  text-decoration: line-through;
+}
+
+#error-tool-tip {
+  position: fixed;
+  opacity: 0;
+  top: calc(100% - 50px);
+  right: 50%;
+  width: 50%;
+  background-color: rgba(255, 153, 153, 0.306);
+  border-left: 5px solid red;
+  padding: 7px;
+  transition: opacity 3s;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(104, 104, 104);
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: blue;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(10, 0, 44);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 1s ease-in-out;
+}
+
+.logo {
+  font-family: "Teko", sans-serif;
+  text-shadow: 5px 6px 0px rgb(5, 47, 255);
+}
+
+.stylish {
+  text-decoration: none;
+  margin: 5px;
+  background: linear-gradient(90deg, red, rgb(255, 180, 180));
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 300ms ease;
+}
+
+.stylish:hover {
+  background-size: 100% 3px;
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  color: white;
+}
+
+header nav a:hover {
+  text-shadow: 0 0 20px #fff, 0 0 30px #8b87ff, 0 0 40px #8b87ff,
+    0 0 50px #524cff, 0 0 60px #726dff, 0 0 70px #8b87ff, 0 0 80px #bdbbff;
+}
+
+header div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#responsiveFunction {
+  display: none;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 430px) {
+  header nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header div {
+    width: 100%;
+  }
+
+  #responsiveFunction {
+    display: inline;
+  }
+}
+
+#responsiveFunctiontwo {
+  display: none;
+}
+
+.active {
+  color: #ff6262;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  background: linear-gradient(45deg, blue, red);
+}
+
+footer a {
+  color: white;
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+footer div {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.46);
+}
+
+.fa-github:hover {
+  color: rgb(90, 90, 90) !important;
+  border-radius: 50%;
+}
+
+.fa-youtube-play:hover {
+  color: red;
+}
+
+.light {
+  background-color: white;
+}
+
+.light main {
+  color: black;
+}
+
+.light main div {
+  background-color: rgb(223, 255, 255);
+}
+
+.light header {
+  background-color: rgb(212, 212, 212);
+}
+
+.light header a:not(a.active),
+.light header i {
+  color: black;
+}
+
+.light main span button {
+  color: black;
+}
+
+.light .shape-fill  {
+  fill: white !important;
+}

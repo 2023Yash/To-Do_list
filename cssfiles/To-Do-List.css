@@ -1,0 +1,77 @@
+main {
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px 0;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+input:focus {
+  border: 3px solid blue;
+}
+
+main div {
+  background-color: rgba(240, 255, 255, 0.3);
+  height: 300px;
+  margin: 10px 0;
+  border-radius: 20px;
+  overflow-y: scroll;
+  padding: 10px 20px 20px 40px;
+}
+
+main div::-webkit-scrollbar, main div ol::-webkit-scrollbar {
+  display: none;
+}
+
+main p {
+  margin-top: 10px;
+}
+
+li {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+}
+
+li span {
+  float: right;
+  margin-right: 5px;
+}
+
+li span:hover {
+  color: #ff6262;
+}
+
+li::marker {
+  color: #aeacff;
+}
+
+button {
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgb(255, 196, 196), rgb(212, 212, 255));
+  font-size: 20px;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: border 500ms ease-in-out;
+  border: 3px solid rgb(255, 0, 0);
+}

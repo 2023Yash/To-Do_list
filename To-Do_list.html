@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="cssfiles/All_Tabs.css" />
+    <link rel="stylesheet" href="cssfiles/To-Do-List.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <!-- nav -->
+
+    <header>
+      <!-- header -->
+      <div>
+        <h1 class="logo p5">To-Do List</h1>
+        <a
+          id="responsiveFunction"
+          onclick="responsiveFunction()"
+          class="fa fa-bars"
+        ></a>
+      </div>
+      <!-- others -->
+      <nav id="btn">
+        <a href="Home.html" class="stylish">Home</a>
+        <a href="How-To.html" class="stylish">How To Use</a>
+        <a href="To-Do_list.html" class="stylish active">To-Do List</a>
+        <i class="fa fa-circle" onclick="liOrDa()"></i>
+      </nav>
+    </header>
+
+    <!-- main To-Do -->
+
+    <main>
+      <!-- User Input -->
+      <h2 class="p2">Tasks</h2>
+      <input type="text" id="input" placeholder="Enter a task" />
+
+      <h2 class="p2">Time</h2>
+      <input type="time" id="time" />
+
+      <p>
+        <b>You have <span id="task-num">0</span> tasks to do today</b>
+      </p>
+
+      <!-- Main List -->
+
+      <div>
+        <ol id="list"></ol>
+      </div>
+
+      <button onclick="toList()">Add to list</button>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="p7">
+      <p>©To-Do list Advance <span id="year"></span></p>
+      <div>
+        <a href="https://github.com/2023Yash/2023Yash"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+      </div>
+    </footer>
+
+    <!-- Script -->
+
+    <p id="error-tool-tip"></p>
+
+    <script src="jsFiles/To-Do-List.js"></script>
+    <script src="jsFiles/All_Tabs.js"></script>
+  </body>
+</html>

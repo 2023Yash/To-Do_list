@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="cssfiles/All_Tabs.css" />
+    <title>To-Do List | How-to</title>
+    <style>
+      main {
+        width: 100%
+      }
+      
+      iframe {
+        margin: 100px 0;
+        aspect-ratio: 16/8;
+        width: 100%
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+
+    <header>
+      <!-- header -->
+      <div>
+        <h1 class="logo p5">To-Do List</h1>
+        <a
+          id="responsiveFunction"
+          onclick="responsiveFunction()"
+          class="fa fa-bars"
+        ></a>
+      </div>
+      <!-- others -->
+      <nav id="btn">
+        <a href="Home.html" class="stylish">Home</a>
+        <a href="How-To.html" class="stylish active">How To Use</a>
+        <a href="To-Do_list.html" class="stylish">To-Do List</a>
+        <i class="fa fa-circle" onclick="liOrDa()"></i>
+      </nav>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=k9ITjs8mNWXBwna6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="p7">
+      <p>©To-Do list Advance <span id="year"></span></p>
+      <div>
+        <a href="https://github.com/2023Yash/2023Yash"
+          ><i class="fa fa-github"></i
+        ></a>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+      </div>
+    </footer>
+
+    <!-- Script -->
+
+    <script src="jsFiles/All_Tabs.js"></script>
+  </body>
+</html>
