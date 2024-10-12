@@ -4,6 +4,7 @@ main {
   justify-content: center;
   flex-direction: column;
   margin: 60px 0;
+  min-height: 96dvh;
 }
 
 input {

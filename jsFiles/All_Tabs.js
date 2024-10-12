@@ -1,6 +1,6 @@
 const btns = document.getElementById("btn");
 const year = document.getElementById("year");
-localStorage.getItem("liOrDa") !== null ? "" : localStorage.setItem("liOrDa", 1);
+localStorage.getItem("liOrDa") !== null ? "" : localStorage.setItem("liOrDa", 0);
 document.querySelector("body").style.opacity = 1;
 
 year.textContent = new Date().getFullYear();
